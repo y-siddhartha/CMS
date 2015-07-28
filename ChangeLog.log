@@ -1,0 +1,109 @@
+**************************************************************************
+
+07/14/2015 9:48 AM CST
+CMSDev and CMSProd are in sync.
+Old Dev copy which has extra file is placed in Dev Backup Folder.
+Current Prod copy is also backed up in the Prod Backup folder
+Status - In Sync
+
+**************************************************************************
+
+07/14/2015 9:55 AM CST 
+CMSDev-Pagination moved from Home.js to Commons.js
+Status - Not In Sync
+
+**************************************************************************
+
+10:07 AM 7/14/2015
+
+CMSDev- Enabled Double Click Zoom to the Map
+Status - Not in Sync
+
+**************************************************************************
+
+10:31 AM 7/14/2015
+
+CMSDev- New Map service used
+	Changed the grave spaces definition expression to 1=1
+
+Status - Not in Sync
+
+**************************************************************************
+
+10:55 AM 7/14/2015
+
+CMSDev - Enter Key used to search 
+
+**************************************************************************
+
+1:10 PM 7/14/2015
+
+CMSDev - Map max zoom limited 
+	 Home page close button not working hence removed. Needs fixing.
+
+Status - In Sync
+
+
+**************************************************************************
+
+**************************************************************************
+
+**************************************************************************
+
+2:04 PM 7/14/2015
+
+CMSDev - Hover over cemetery boundaries to get cemetery information when the map is zoomed out
+	 Code added and commented in Map.js
+	 *********Work in progress.************
+
+Status - Not in Sync
+
+***************************************************************************
+
+12:02 PM 7/16/2015
+
+CMSDev - added a config.js file to be used to properties for common variables
+	 used the config properties across different javascript files	
+	 changed the css file folder name to Styling from Template _ City of Opelika_files
+	 Added info bar on the map, also the required CSS edit
+	 moved the <script> tags to the bottom inside body
+
+CMSProd - Taken a backup
+	  Replaced with dev code
+	  The commented hover over cemetery boundaries is deleted
+	  Code pushed to production	
+	 	 
+
+***************************************************************************
+
+CMSDev and Prod - Config file edited to use server which are open to public instead of ones within the network
+CMS Prod	- Backup taken and deployed
+	 
+**************************************************************************
+
+**************************************************************************
+
+**************************************************************************
+
+11:45 AM 7/17/2015
+
+CMSDev - The layer URL which was not changed in the SearchResult.js file is changed and is now picked up from the config file.
+	 Cemetery boundaries code is added and is working 
+
+Current Issues - Problem with the map rendering on google chrome from the server
+
+**************************************************************************
+
+3:09 PM 7/17/2015
+
+CMSDev - changed the symbols used for gravespaces and selected gravespaces.
+         moved the features to config
+         Added empty search string and invalid string validators
+
+Status - In Sync
+
+**************************************************************************
+
+**************************************************************************
+
+**************************************************************************
