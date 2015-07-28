@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<!--The viewport meta tag is used to improve the presentation and behavior of the samples
+		on iOS devices-->
+		<!-- <meta name="viewport" content="initial-scale=1, maximum-scale=1,user-scalable=no"> -->
+		<title>Feature Layer - display results as an InfoWindow onHover</title>
+
+		<link rel="stylesheet" href="http://js.arcgis.com/3.13/dijit/themes/tundra/tundra.css">
+		<link rel="stylesheet" href="http://js.arcgis.com/3.13/esri/css/esri.css">
+		<style>
+			html, body, #mapDiv {
+				padding: 0;
+				margin: 0;
+				height: 100%;
+			}
+			#mapDiv {
+				position: relative;
+			}
+			#info {
+				background: #fff;
+				box-shadow: 0 0 5px #888;
+				left: 1em;
+				padding: 0.5em;
+				position: absolute;
+				top: 1em;
+				z-index: 40;
+			}
+		</style>
+
+	</head>
+	<body class="tundra">
+		<div id="mapDiv">
+			<div id="info">
+				Scroll to zoom in and see more information.
+			</div>
+		</div>
+		<script src="JSPages/Config.js"></script>
+		<script src="http://js.arcgis.com/3.13/"></script>
+		<script src="JSPages/Commons.js"></script>
+		<script src="JSPages/Map.js"></script>
+	</body>
+</html>

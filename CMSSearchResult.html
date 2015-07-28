@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- <link rel="stylesheet" type="text/css" href="Styling/styling.css"> -->
+		<LINK href="styling/Global.css"
+		rel="stylesheet" type="text/css">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<!--The viewport meta tag is used to improve the presentation and behavior of the samples
+		on iOS devices-->
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1,user-scalable=no">
+		<title>Opelika Cemeteries</title>
+	</head>
+
+	<body>
+		<DIV class="container">
+			<DIV class="header"></DIV>
+			<DIV class="topnav">
+				<DIV class="horiznav">
+					<div id="search">
+						Search By:
+						<select name="search" id="searchBy">
+							<option value="interredFirstName">Interred First Name</option>
+							<option value="interredLastName">Interred Last Name</option>
+							<option value="ownerName">Owner Name</option>
+						</select>
+						Keyword:
+						<input type="text" align="left" id="searchKeyword" value="" onkeydown="if (event.keyCode == 13) document.getElementById('execute').click()">
+						<input id="execute" type="button" value="Get Details">
+					</div>
+				</DIV>
+			</DIV>
+			<DIV class="content">
+
+				<form form id="results" action="" method="get" enctype="application/x-www-form-urlencoded">
+					<div id="pageNavPosition"></div>
+					<table id="output" class="out" style="padding:5px; margin:5px;" ></table>
+				</form>
+				<iframe id="map"></iframe>
+
+			</DIV>
+			<DIV class="footer">
+				<p>
+					<br/>
+					Copyright © 2015 - City of Opelika, Alabama | 204 South 7th Street, Opelika, AL 36801
+				</p>
+			</DIV>
+		</DIV>
+		<script src="JSPages/Config.js"></script>
+		<script src="http://js.arcgis.com/3.13/"></script>
+		<script src="JSPages/Commons.js"></script>
+		<script src="JSPages/SearchResult.js"></script>
+		<script src="JSPages/Home.js"></script>
+	</body>
+</html>
