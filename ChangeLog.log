@@ -107,3 +107,15 @@ Status - In Sync
 **************************************************************************
 
 **************************************************************************
+
+10:04 AM 12/14/2015
+
+CMSProd - Backups naming convention changed to "CMS-v20151214" from "CMSProd-Backup20151214"
+
+**************************************************************************
+
+11:58 AM 12/14/2015
+
+CMSDev - Added Aerial View Feature 
+	 	 Shifted the zoom-slider to bottom-left from top-left
+
