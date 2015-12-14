@@ -9,6 +9,28 @@ function getQueryVariable(variable) {
 	}
 }
 
+function switchToMapView() {
+	serialNumber = getQueryVariable("serialNumber");
+	var element = document.getElementById("MapView");
+	if (serialNumber === undefined || serialNumber === null) {
+		element.innerHTML = '<a href=CMSMap.html>Swtich to Map View</a>';
+	} else {
+		element.innerHTML = '<a href=CMSMap.html?serialNumber=' + serialNumber + '>Swtich to Map View</a>';
+	}
+}
+
+
+function switchToAerialView() {
+	serialNumber = getQueryVariable("serialNumber");
+	var element = document.getElementById("AerialView");
+	if (serialNumber === undefined || serialNumber === null) {
+		element.innerHTML = '<a href=CMSAerialMap.html>Switch to Aerial View</a>';
+	} else {
+		element.innerHTML = '<a href=CMSAerialMap.html?serialNumber=' + serialNumber + '>Swtich to Aerial View</a>';
+	}
+}
+
+
 var pager = new Pager('output', 3, 'pager', 'pageNavPosition');
 
 function Pager(tableName, itemsPerPage, pagerName, positionId) {

@@ -5,11 +5,12 @@ require(["esri/map", "esri/layers/FeatureLayer", "esri/symbols/SimpleFillSymbol"
 		sliderOrientation : "vertical",
 		sliderPosition : "bottom-left",
 		sliderStyle : "large",
-		maxScale : 300
+		maxScale : 500,
+		minScale : 30000
 	});
 
 	//add the CMS map layer and set the extent
-	var baseLayer = new esri.layers.ArcGISDynamicMapServiceLayer(properties.mapService);
+	var baseLayer = new esri.layers.ArcGISDynamicMapServiceLayer(properties.aerialMapService);
 
 	map.addLayer(baseLayer);
 	visible = [1, 2, 3, 4, 5, 6, 7, 8];
@@ -170,5 +171,4 @@ function getMapExtent() {
 	return startExtent;
 };
 
-var switchToAerialView = new switchToAerialView();
-
+var switchToMapView = new switchToMapView();

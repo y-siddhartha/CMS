@@ -6,7 +6,6 @@ require(["dojo/dom", "dojo/on", "esri/tasks/query", "esri/tasks/QueryTask", "doj
 	query.returnGeometry = false;
 	query.outFields = ["Cem_Name", "Interred_L", "Interred_F", "Owner_1", "Owner_2", "Section", "PlotNum", "SpaceNum", "SrchNum", "VET"];
 
-
 	query.where = "SrchNum = '" + getQueryVariable("serialNumber") + "'";
 	queryTask.execute(query, showResults);
 
@@ -60,9 +59,9 @@ require(["dojo/dom", "dojo/on", "esri/tasks/query", "esri/tasks/QueryTask", "doj
 			resultItems.push("<br>");
 		}
 		dom.byId("output").innerHTML = resultItems.join("");
-		// document.getElementById("map").src ="SearchResultMap.html?serialNumber="+srchNum;
 	}
 
-
-	document.getElementById("map").src = "CMSMap.html?serialNumber=" + getQueryVariable("serialNumber");
-}); 
+	source = "CMSMap.html";
+	source = source + "?serialNumber=" + getQueryVariable("serialNumber");
+	document.getElementById("map").src = source;
+});

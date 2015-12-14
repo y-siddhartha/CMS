@@ -1,5 +1,6 @@
 var properties = {
 	mapService : 'http://gis.opelika-al.gov/arcgis/rest/services/Map_Services/Cemetery/MapServer',
+	aerialMapService : 'http://gis.opelika-al.gov/arcgis/rest/services/Map_Services/CemeteryAerials/MapServer',
 	graveSpacesLayer : 'http://gis.opelika-al.gov/arcgis/rest/services/Map_Services/Cemetery/MapServer/0',
 	cemeteryPlotsLayer : 'http://gis.opelika-al.gov/arcgis/rest/services/Map_Services/Cemetery/MapServer/1',
 	cemeteryBoundariesLayer : 'http://gis.opelika-al.gov/arcgis/rest/services/Map_Services/Cemetery/MapServer/2',
